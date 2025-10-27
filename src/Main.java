@@ -5,17 +5,14 @@ public class Main {
     public static void main(String[] args) {
         Capteur c1= new Capteur(1, "humidite", "Fes", new Date());
         Capteur c2= new Capteur(2, "temperature", "Rabat", new Date());
-        Capteur c3= new Capteur(3, "temperature", "Fes", new Date());
-        Capteur c4= new Capteur(4, "ph", "Casablanca", new Date());
+        Capteur c3= new Capteur(4, "ph", "Casablanca", new Date());
         Mesures m1= new Mesures("temperature", 2, 35);
         Mesures m2= new Mesures("humidite", 1, 21);
-        Mesures m3= new Mesures("temperature", 3, 25);
-        Mesures m4= new Mesures("ph", 4, 7);
+        Mesures m3= new Mesures("ph", 4, 7);
         Etc etc= new Etc();
         etc.mesures.add(m1);
         etc.mesures.add(m2);
         etc.mesures.add(m3);
-        etc.mesures.add(m4);
         ArrayList<Double>humidite= new ArrayList<>();
         ArrayList<Double>temperature= new ArrayList<>();
         ArrayList<Double>ph= new ArrayList<>();
@@ -63,7 +60,7 @@ public class Main {
         int c_fes=0;
         int c_rabat=0;
         int c_casa=0;
-        Capteur[] capteurs = {c1, c2, c3, c4};
+        Capteur[] capteurs = {c1, c2, c3};
         for (Mesures m : etc.mesures) {
             String region="";
             for (Capteur c : capteurs) {

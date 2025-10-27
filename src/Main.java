@@ -5,10 +5,10 @@ public class Main {
     public static void main(String[] args) {
         Capteur c1= new Capteur(1, "humidite", "Fes", new Date());
         Capteur c2= new Capteur(2, "temperature", "Rabat", new Date());
-        Capteur c3= new Capteur(4, "ph", "Casablanca", new Date());
+        Capteur c3= new Capteur(3, "ph", "Casablanca", new Date());
         Mesures m1= new Mesures("temperature", 2, 35);
         Mesures m2= new Mesures("humidite", 1, 21);
-        Mesures m3= new Mesures("ph", 4, 7);
+        Mesures m3= new Mesures("ph", 3, 7);
         Etc etc= new Etc();
         etc.mesures.add(m1);
         etc.mesures.add(m2);

@@ -24,7 +24,7 @@ public class Mesures {
             m.valeur= nvvaleur;
             System.out.println("Mesure changee");
         } else {
-            System.out.println("Erreur : index ou ne pas pas");
+            System.out.println("Erreur");
         }
     }
 }
